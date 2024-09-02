@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills and Knowledge Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <div class="robot-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><path fill="#2E86C1" d="M12 2a3 3 0 00-3 3H7.05a3 3 0 00-2.91 2.09A5.978 5.978 0 002 12v1a5.978 5.978 0 002.14 4.58c.15.14.34.2.54.2h14.64c.2 0 .39-.06.54-.2A5.978 5.978 0 0022 13v-1a5.978 5.978 0 00-2.14-4.58A3 3 0 0016.95 5H15a3 3 0 00-3-3zM12 0a5 5 0 014.58 3h1.37c1.42 0 2.58 1.16 2.58 2.58A7.978 7.978 0 0120 12v1a7.978 7.978 0 01-.47 3H4.47A7.978 7.978 0 014 13v-1a7.978 7.978 0 01.47-3A2.58 2.58 0 017.95 3h1.37A5 5 0 0112 0zm-4 7.5C8 8.33 7.33 9 6.5 9S5 8.33 5 7.5 5.67 6 6.5 6 8 6.67 8 7.5zm8 0C16 8.33 15.33 9 14.5 9s-1.5-.67-1.5-1.5S13.67 6 14.5 6 16 6.67 16 7.5zM6.5 14c.83 0 1.5.67 1.5 1.5S7.33 17 6.5 17 5 16.33 5 15.5 5.67 14 6.5 14zm11 0c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zm-11 1a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V15a.5.5 0 01.5-.5h1c.28 0 .5.22.5.5v.5zm11 0a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V15c0-.28.22-.5.5-.5h1c.28 0 .5.22.5.5v.5z"/></svg>
+            </div>
+            <p>Select the skills and knowledge you want to check and the difficulty level. The more specific you are, the greater the results!</p>
+        </div>
+        <form class="skills-form">
+            <div class="topic-row">
+                <div class="topic-item">
+                    <label for="topic1">Topic #1:</label>
+                    <input type="text" id="topic1" name="topic1" value="ReactJS">
+                </div>
+                <div class="topic-item">
+                    <label for="difficulty1">Difficulty level:</label>
+                    <select id="difficulty1" name="difficulty1">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="topic-item">
+                    <label for="questionType1">Question type:</label>
+                    <select id="questionType1" name="questionType1">
+                        <option value="multiple" selected>Multiple choice</option>
+                        <option value="descriptive">Descriptive</option>
+                    </select>
+                </div>
+                <button type="button" class="delete-btn">🗑️</button>
+            </div>
+            <div class="topic-row">
+                <div class="topic-item">
+                    <label for="topic2">Topic #2:</label>
+                    <input type="text" id="topic2" name="topic2" value="Email communication with dev">
+                </div>
+                <div class="topic-item">
+                    <label for="difficulty2">Difficulty level:</label>
+                    <select id="difficulty2" name="difficulty2">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="topic-item">
+                    <label for="questionType2">Question type:</label>
+                    <select id="questionType2" name="questionType2">
+                        <option value="multiple">Multiple choice</option>
+                        <option value="descriptive" selected>Descriptive</option>
+                    </select>
+                </div>
+                <button type="button" class="delete-btn">🗑️</button>
+            </div>
+            <button type="button" class="add-topic-btn">Add topic</button>
+            <div class="settings">
+                <div class="settings-item">
+                    <label for="language">Language:</label>
+                    <select id="language" name="language">
+                        <option value="english" selected>English</option>
+                        <option value="spanish">Spanish</option>
+                    </select>
+                </div>
+                <div class="settings-item">
+                    <label for="questionsPerTopic">Number of questions per topic:</label>
+                    <select id="questionsPerTopic" name="questionsPerTopic">
+                        <option value="5" selected>5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
